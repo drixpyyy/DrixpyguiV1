@@ -1,0 +1,122 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Drixpy's GUI V1", HidePremium = true, SaveConfig = true, ConfigFolder = "Drixpy Gui Configs"})
+
+local Tab = Window:MakeTab({
+	Name = "JJsploit",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Scripts Compatiable With JJsploit(best executor)"
+})
+
+
+Tab:AddButton({
+	Name = "Orca Hub",
+	Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))()
+
+  	end    
+})
+
+
+
+Tab:AddButton({
+	Name = "SynWarez Bedwars",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/AFGCLIENT/Snyware/main/Loader'))()
+
+
+  	end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Solara",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Scripts Compatiable with Solara(mid executor)"
+})
+
+
+Tab:AddButton({
+	Name = "Orca Hub",
+	Callback = function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))()
+
+  	end    
+})
+
+
+
+Tab:AddButton({
+	Name = "SynWarez Bedwars",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/AFGCLIENT/Snyware/main/Loader'))()
+
+
+  	end    
+})
+
+
+local Tab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Sir Meme",
+	Callback = function()
+OrionLib:MakeNotification({
+	Name = "SirMeme",
+	Content = "Sirmeme is a Professional Known Exploiter ",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+
+
+  	end    
+})
+
+
+
+Tab:AddButton({
+	Name = "Owner",
+	Callback = function()
+OrionLib:MakeNotification({
+	Name = "Drixpy",
+	Content = "Drixpy is a Unknown Exploiter And His Discord is .error_787 He is the Exact Opposite of sirmeme",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+
+
+  	end    
+})
+
+
+OrionLib:MakeNotification({
+	Name = "Drixpy Hub V1 Has Been Loaded",
+	Content = "WSG my ni, Sirmeme Steel Incident",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+OrionLib:MakeNotification({
+	Name = "Join the discord pls",
+	Content = "Js join the discord for V2 when it comes out and more ",
+	Image = "rbxassetid://4483345998",
+	Time = 10
+})
+
+OrionLib:MakeNotification({
+	Name = "DM Me!!1!1!",
+	Content = "DM me for the discord my discord is .error_787",
+	Image = "rbxassetid://4483345998",
+	Time = 15
+})
