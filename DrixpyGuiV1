@@ -32,6 +32,16 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/AFGCLIENT/Snyware/mai
   	end    
 })
 
+
+Tab:AddButton({
+	Name = "Chat Bypasser(Best One Yet)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shadow62x/catbypass/main/upfix"))()
+
+
+  	end    
+})
+
 local Tab = Window:MakeTab({
 	Name = "Solara",
 	Icon = "rbxassetid://4483345998",
@@ -57,6 +67,16 @@ Tab:AddButton({
 	Name = "SynWarez Bedwars",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/AFGCLIENT/Snyware/main/Loader'))()
+
+
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Chat Bypasser(Click Twice)",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shadow62x/catbypass/main/upfix"))()
 
 
   	end    
