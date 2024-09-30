@@ -1,0 +1,355 @@
+ loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Anthonys-acl-ANTI-CHAT-LOGGER-7184"))()
+print("executed lol")
+game.StarterGui:SetCore("SendNotification", {Title = "bad gui", Text = "executed!!", Icon = "rbxassetid://1263691196", Duration = 5, Button1 = "Noone cares"})
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "drakehub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "diddy"})
+local Normal = Window:MakeTab({
+	Name = "Normal",
+	Icon = "rbxassetid://11176073582",
+	PremiumOnly = false
+})
+Normal:AddButton({
+	Name = "Backflips",
+	Callback = function()
+      		wait(5)
+
+--[[ Info ]]--
+
+local ver = "2.00"
+local scriptname = "feFlip"
+
+
+--[[ Keybinds ]]--
+
+local FrontflipKey = Enum.KeyCode.Z
+local BackflipKey = Enum.KeyCode.X
+local AirjumpKey = Enum.KeyCode.B
+
+
+--[[ Dependencies ]]--
+
+local ca = game:GetService("ContextActionService")
+local zeezy = game:GetService("Players").LocalPlayer
+local h = 0.0174533
+local antigrav
+
+
+--[[ Functions ]]--
+
+function zeezyFrontflip(act,inp,obj)
+	if inp == Enum.UserInputState.Begin then
+		zeezy.Character.Humanoid:ChangeState("Jumping")
+		wait()
+		zeezy.Character.Humanoid.Sit = true
+		for i = 1,360 do 
+			delay(i/720,function()
+			zeezy.Character.Humanoid.Sit = true
+				zeezy.Character.HumanoidRootPart.CFrame = zeezy.Character.HumanoidRootPart.CFrame * CFrame.Angles(-h,0,0)
+			end)
+		end
+		wait(0.55)
+		zeezy.Character.Humanoid.Sit = false
+	end
+end
+
+function zeezyBackflip(act,inp,obj)
+	if inp == Enum.UserInputState.Begin then
+		zeezy.Character.Humanoid:ChangeState("Jumping")
+		wait()
+		zeezy.Character.Humanoid.Sit = true
+		for i = 1,360 do
+			delay(i/720,function()
+			zeezy.Character.Humanoid.Sit = true
+				zeezy.Character.HumanoidRootPart.CFrame = zeezy.Character.HumanoidRootPart.CFrame * CFrame.Angles(h,0,0)
+			end)
+		end
+		wait(0.55)
+		zeezy.Character.Humanoid.Sit = false
+	end
+end
+
+function zeezyAirjump(act,inp,obj)
+	if inp == Enum.UserInputState.Begin then
+		zeezy.Character:FindFirstChildOfClass'Humanoid':ChangeState("Seated")
+		wait()
+		zeezy.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")	
+	end
+end
+
+
+--[[ Binds ]]--
+
+ca:BindAction("zeezyFrontflip",zeezyFrontflip,false,FrontflipKey)
+ca:BindAction("zeezyBackflip",zeezyBackflip,false,BackflipKey)
+ca:BindAction("zeezyAirjump",zeezyAirjump,false,AirjumpKey)
+
+--[[ Load Message ]]--
+
+print(scriptname .. " " .. ver .. " loaded successfully")
+print("made by Zeezy#7203")
+
+local notifSound = Instance.new("Sound",workspace)
+notifSound.PlaybackSpeed = 1.5
+notifSound.Volume = 0.15
+notifSound.SoundId = "rbxassetid://170765130"
+notifSound.PlayOnRemove = true
+notifSound:Destroy()
+game.StarterGui:SetCore("SendNotification", {Title = "feFlip", Text = "feFlip loaded successfully!", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+Normal:AddButton({
+	Name = "chat bypasser",
+	Callback = function()
+      		--[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/KAWAII-BYPASS/main/kawaii-bypass",true))()
+  	end    
+})
+
+Normal:AddButton({
+	Name = "Krone (fling all)",
+	Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Krone-leaked-by-me-7153"))()
+  	end    
+})
+
+Normal:AddButton({
+	Name = "reviz admin (og admin) ",
+	Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Reviz-Admin-FE_156"))()
+  	end    
+})
+local chatgyat = Window:MakeTab({
+	Name = "18+ chat bypasses",
+	Icon = "",
+	PremiumOnly = false
+})
+
+chatgyat:AddButton({
+	Name = "(っ◔◡◔)っ ♥ oopsie just nutted ♥",
+	Callback = function()
+local args = {
+    [1] = "(っ◔◡◔)っ ♥ oopsie just nutted ♥",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end    
+})
+
+chatgyat:AddButton({
+	Name = "(っ◔◡◔)っ ♥ hangg yourself ♥",
+	Callback = function()
+local args = {
+    [1] = "(っ◔◡◔)っ ♥ hangg yourself ♥",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end    
+})
+
+chatgyat:AddButton({
+	Name = "fix tags",
+	Callback = function()
+local args = {
+    [1] = "abcdefghijklmnopqrstuvwxyz;",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end    
+})
+
+chatgyat:AddButton({
+	Name = "🅵🅴🅴🅻🅸🅽🅶~ 🅷🅲🆁🅾🅽🆈",
+	Callback = function()
+local args = {
+    [1] = "🅵🅴🅴🅻🅸🅽🅶~ 🅷🅲🆁🅾🅽🆈",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end    
+})
+
+chatgyat:AddButton({
+	Name = "ʙʀᴏ ɪ'ᴍ ᴡᴀᴛᴄʜɪɴɢ ʀ63 ʀɴ",
+	Callback = function()
+local args = {
+    [1] = "ʙʀᴏ ɪ'ᴍ ᴡᴀᴛᴄʜɪɴɢ ʀ63 ʀɴ",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end    
+})
+chatgyat:AddButton({
+	Name = "(っ◔◡◔)っdienicka(っ◔◡◔)っ",
+	Callback = function()
+local args = {
+    [1] = "(っ◔◡◔)っdienicka(っ◔◡◔)っ",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end    
+})
+chatgyat:AddButton({
+	Name = "κûç|ûẋκ|åň",
+	Callback = function()
+local args = {
+    [1] = "κûç|ûẋκ|åň",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end    
+})
+chatgyat:AddButton({
+	Name = "ᴛћɵᴛ",
+	Callback = function()
+local args = {
+    [1] = "ᴛћɵᴛ",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end    
+})
+
+
+chatgyat:AddButton({
+Name = "Dіddу dіd пцп ғгee ᴛћaᴛ піcкa",
+	Callback = function()
+local args = {
+    [1] = "Dіddу dіd пцп ғгee ᴛћaᴛ піcкa",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end    
+})
+
+chatgyat:AddButton({
+Name = "Ｊ∪れＫ工モ",
+	Callback = function()
+local args = {
+    [1] = "Ｊ∪れＫ工モ",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end        
+})
+
+chatgyat:AddButton({
+Name = "丹れ丹ㄥ ちモメ",
+	Callback = function()
+local args = {
+    [1] = "丹れ丹ㄥ ちモメ",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end        
+})
+
+chatgyat:AddButton({
+Name = "刀丹れム 匕卄丹匕 れ工ムム丹 工れ Ｊ丹工ㄥ",
+	Callback = function()
+local args = {
+    [1] = "刀丹れム 匕卄丹匕 れ工ムム丹 工れ Ｊ丹工ㄥ",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end        
+})
+
+chatgyat:AddButton({
+Name = "れ工ムム丹",
+	Callback = function()
+local args = {
+    [1] = "れ工ムム丹",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end        
+})
+
+chatgyat:AddButton({
+Name = "Ｋ工ㄥㄥ 匕卄モ 乃ㄥ丹匚Ｋち ",
+	Callback = function()
+local args = {
+    [1] = "Ｋ工ㄥㄥ 匕卄モ 乃ㄥ丹匚Ｋち ",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end        
+})
+
+chatgyat:AddButton({
+Name = "spam blacks in cages (it will tag in a couple of seconds) ",
+	Callback = function()
+            while true do wait(0.9)
+local args = {
+    [1] = "乃ㄥ丹匚Ｋち 工れ 匚丹ムモち  ",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end        
+        end
+})
+
+chatgyat:AddButton({
+Name = "ЅTӨΡ TӨЦCНIИG TНӨЅЄ КIDЅ",
+	Callback = function()
+local args = {
+    [1] = "ЅTӨΡ TӨЦCНIИG TНӨЅЄ КIDЅ",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end        
+})
+
+chatgyat:AddButton({
+Name = "ɵћ sɵ уɵцг a pedɵћpіʟe?",
+	Callback = function()
+local args = {
+    [1] = "ɵћ sɵ уɵцг a pedɵћpіʟe?",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end        
+})
+
+chatgyat:AddButton({
+Name = "мɵмму ᴛћaᴛ's ᴛћe кіd ᴛћaᴛ ғ'd  мe іп ᴛћe aћћ",
+	Callback = function()
+local args = {
+    [1] = "мɵмму ᴛћaᴛ's ᴛћe кіd ᴛћaᴛ ғ'd  мe іп ᴛћe aћћ",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	end        
+})
+
+
+chatgyat:AddButton({
+Name = "commit suicide (suicide script) ",
+	Callback = function()
+local args = {
+    [1] = "і шaппa мцгdeг му seʟғ",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+  	wait(2)
+            local args = {
+    [1] = "alr bro that is it;",
+    [2] = "All"
+}
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+ 
+            wait(3)
+            
+        game.Players.LocalPlayer.Character.Humanoid.Health = 0
+        end
+})
