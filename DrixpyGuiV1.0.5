@@ -66,7 +66,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/ocfi/Choose-ARt-able-
 
 
 Tab:AddButton({
-	Name = "IY",
+	Name = "IYREBORN",
 	Callback = function()
 loadstring(game:HttpGet("https://storage.iyr.lol/legacy-iyr/source"))()
 
@@ -94,8 +94,6 @@ https://raw.githubusercontent.com/drixpyyy/invisible/refs/heads/main/invisible%2
 
   	end    
 })
-
-
 
 
 local Tab = Window:MakeTab({
@@ -191,35 +189,6 @@ https://raw.githubusercontent.com/drixpyyy/invisible/refs/heads/main/invisible%2
 
   	end    
 })
-
-
-
-
-local Tab = Window:MakeTab({
-	Name = "Universal",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-
-
-local Section = Tab:AddSection({
-	Name = "Universal Things"
-})
-
-
-local SpeedSlider = Tab:AddSlider({
-    Name = "Speed",
-    Default = 10, -- initial value
-    Min = 0.5, -- minimum value
-    Max = 1000, -- maximum value
-    Increment = 1, -- step value
-    ValueName = "ms", -- text suffix for value display
-    Callback = function(value) -- optional callback function
-        -- code to execute when slider value changes
-    end
-})
-
 
 
 
